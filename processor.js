@@ -27,7 +27,6 @@ let processor = {
             c2div.style.display = 'block';
             let koPositionY = window.pageYOffset - document.documentElement.clientHeight / 2;
             let koPositionX = document.documentElement.clientWidth / 8;
-            alert(document.documentElement.clientHeight/2);
             c2div.style.top = koPositionY + "px";
             c2div.style.left = koPositionX + "px";
             self.video.play();
