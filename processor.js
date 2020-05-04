@@ -30,13 +30,14 @@ let processor = {
             c2div.style.display = 'block';
 
             let koPositionY = window.pageYOffset - document.documentElement.clientHeight / 2;
-            let koPositionX = document.documentElement.clientWidth / 8;
-            c2div.style.top = koPositionY + "px";
-            c2div.style.left = koPositionX + "px";
 
+            c2div.style.top = koPositionY + "px";
+            c2div.style.left = 25 + "%";
+
+            
+            self.width = document.documentElement.clientWidth / 2;
+            self.height = self.width * 9 / 16;
             self.video.play();
-            self.width = self.video.videoWidth / 2;
-            self.height = self.video.videoHeight / 2;
             self.timerCallback();
         }, false);
     },
